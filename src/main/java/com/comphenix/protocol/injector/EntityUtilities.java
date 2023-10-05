@@ -240,7 +240,7 @@ class EntityUtilities {
         Object playerChunkMap = this.chunkMapField.get(chunkProvider);
 
         if (this.trackedEntitiesField == null) {
-            if (MinecraftVersion.CAVES_CLIFFS_1.atOrAbove()) {
+            if (MinecraftVersion.NETHER_UPDATE_4.atOrAbove()) {
                 this.trackedEntitiesField = Accessors.getFieldAccessor(
                         FuzzyReflection.fromClass(playerChunkMap.getClass(), true)
                                 .getField(FuzzyFieldContract.newBuilder()
